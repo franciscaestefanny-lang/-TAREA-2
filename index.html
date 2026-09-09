@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio académico sobre arquitectura de computadores, redes y ciberdelitos" />
+  <title>Arquitectura de Computadores, Redes y Ciberdelitos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true">
+    <span class="reading-progress-bar"></span>
+  </div>
+
+  <a class="back-to-top" href="#home" aria-label="Volver arriba">↑</a>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#home" aria-label="Inicio">
+        <span class="brand-mark"><span></span></span>
+        <span class="brand-text">ForenseTech</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a class="nav-link active" href="#home">Inicio</a></li>
+        <li><a class="nav-link" href="#module-1">Módulo 1</a></li>
+        <li><a class="nav-link" href="#module-2">Módulo 2</a></li>
+        <li><a class="nav-link" href="#module-3">Módulo 3</a></li>
+        <li><a class="nav-link" href="#conclusions">Conclusiones</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="btn btn-export pdf-button" id="exportPdf">
+          <span>📄</span>
+          Exportar a PDF
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <section class="hero-copy">
+          <div class="section-kicker">Laboratorio Digital • Investigación Forense</div>
+          <h1>ARQUITECTURA DE COMPUTADORES, REDES Y CIBERDELITOS</h1>
+          <h2 class="hero-subtitle">Fundamentos tecnológicos aplicados a la investigación forense digital</h2>
+          <p class="hero-intro">
+            Este sitio presenta los fundamentos de los computadores, las redes de comunicaciones y su
+            importancia dentro del análisis e investigación de ciberdelitos. A través de una estructura
+            modular se relacionan hardware, software, comunicación y evidencia digital.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#module-1">Explorar contenidos</a>
+            <a class="btn btn-secondary" href="#modules">Ver módulos</a>
+          </div>
+
+          <div class="hero-stats">
+            <article class="stat-card">
+              <span class="stat-number" data-count="03">03</span>
+              <span class="stat-label">Módulos</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number" data-count="09">09</span>
+              <span class="stat-label">Bloques</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number" data-count="16">16</span>
+              <span class="stat-label">Objetivos</span>
+            </article>
+          </div>
+        </section>
+
+        <aside class="hero-panel" aria-label="Visualización del ecosistema tecnológico">
+          <div class="hero-panel-frame">
+            <div class="panel-scan">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="hero-grid-icons">
+              <div class="icon-tile cpu-icon">
+                <span class="icon-svg">▣</span>
+                <span class="icon-label">CPU</span>
+              </div>
+              <div class="icon-tile net-icon">
+                <span class="icon-svg">⌁</span>
+                <span class="icon-label">Red</span>
+              </div>
+              <div class="icon-tile sec-icon">
+                <span class="icon-svg">✦</span>
+                <span class="icon-label">Seguridad</span>
+              </div>
+              <div class="icon-tile forensic-icon">
+                <span class="icon-svg">◌</span>
+                <span class="icon-label">Forense</span>
+              </div>
+            </div>
+            <div class="data-stream">
+              <span class="stream-line"></span>
+              <span class="stream-line short"></span>
+              <span class="stream-line"></span>
+              <span class="stream-line medium"></span>
+            </div>
+            <div class="hero-circuit">
+              <span class="circuit-node"></span>
+              <span class="circuit-node"></span>
+              <span class="circuit-node"></span>
+              <span class="circuit-node"></span>
+              <span class="circuit-line"></span>
+            </div>
+            <div class="hero-card-mini">
+              <span class="mini-label">Estado del análisis</span>
+              <span class="mini-status">Activo</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section modules-summary" id="modules">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">Mapa curricular</span>
+          <h2>Recorrido académico</h2>
+          <p class="section-intro">Los contenidos se organizan para conectar hardware, redes y evidencia digital.</p>
+        </div>
+
+        <div class="module-summary-grid">
+          <article class="module-summary-card">
+            <span class="summary-index">01</span>
+            <h3>Arquitectura</h3>
+            <p>CPU, registros, jerarquía de memoria y ejecución de instrucciones.</p>
+            <a class="text-link" href="#module-1">Ver módulo →</a>
+          </article>
+          <article class="module-summary-card">
+            <span class="summary-index">02</span>
+            <h3>Redes</h3>
+            <p>Protocolos, topologías, IP, MAC y estructura de tráfico.</p>
+            <a class="text-link" href="#module-2">Ver módulo →</a>
+          </article>
+          <article class="module-summary-card">
+            <span class="summary-index">03</span>
+            <h3>Ciberdelitos</h3>
+            <p>Forense digital, evidencia, análisis técnico e interpretación.</p>
+            <a class="text-link" href="#module-3">Ver módulo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section module-section" id="module-1">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Módulo 1</span>
+          <h2>Módulo 1: Arquitectura y Estructura de Computadores</h2>
+          <p class="section-intro">
+            La arquitectura de computadores explica cómo el sistema interpreta instrucciones,
+            organiza datos y coordina la ejecución de tareas mediante unidades funcionales.
+          </p>
+        </div>
+
+        <div class="cpu-components-grid">
+          <article class="cpu-card interactive-card" data-cpu-component="ALU">
+            <span class="cpu-card-icon">ALU</span>
+            <h3>ALU – Unidad Aritmético-Lógica</h3>
+            <p>Realiza operaciones aritméticas y lógicas básicas sobre datos.</p>
+            <button class="btn-card" data-open-modal="ALU">Más información</button>
+          </article>
+          <article class="cpu-card interactive-card" data-cpu-component="UC">
+            <span class="cpu-card-icon">UC</span>
+            <h3>UC – Unidad de Control</h3>
+            <p>Coordina el flujo de instrucciones y señales del sistema.</p>
+            <button class="btn-card" data-open-modal="UC">Más información</button>
+          </article>
+          <article class="cpu-card interactive-card" data-cpu-component="REG">
+            <span class="cpu-card-icon">REG</span>
+            <h3>Registros</h3>
+            <p>Almacenan datos temporales y direcciones de trabajo interno.</p>
+            <button class="btn-card" data-open-modal="REG">Más información</button>
+          </article>
+        </div>
+
+        <div class="cpu-flow-section">
+          <div class="cpu-flow-title">
+            <span>Representación funcional</span>
+          </div>
+          <div class="cpu-flow">
+            <div class="cpu-flow-node card-node" data-node="alu">ALU</div>
+            <span class="flow-arrow">→</span>
+            <div class="cpu-flow-node card-node" data-node="control">Unidad de Control</div>
+            <span class="flow-arrow">→</span>
+            <div class="cpu-flow-node card-node" data-node="registers">Registros</div>
+          </div>
+        </div>
+
+        <div class="instruction-cycle-section">
+          <div class="section-heading sub-heading">
+            <span class="section-kicker">Ciclo de Instrucción</span>
+            <h2>Ciclo de Instrucción: Fetch – Decode – Execute</h2>
+          </div>
+          <div class="cycle-container">
+            <div class="cycle-visual">
+              <div class="cycle-flow">
+                <span class="cycle-stage active" id="cycleStage">FETCH</span>
+                <span class="cycle-arrow">→</span>
+                <span class="cycle-stage">DECODE</span>
+                <span class="cycle-arrow">→</span>
+                <span class="cycle-stage">EXECUTE</span>
+              </div>
+              <div class="cycle-animation">
+                <span class="cycle-pulse pulse-fetch">FETCH</span>
+                <span class="cycle-pulse pulse-decode">DECODE</span>
+                <span class="cycle-pulse pulse-execute">EXECUTE</span>
+              </div>
+              <div class="cycle-controls">
+                <button class="btn btn-secondary cycle-prev" id="prevStage">Anterior</button>
+                <button class="btn btn-primary cycle-next" id="nextStage">Siguiente</button>
+                <button class="btn btn-secondary cycle-reset" id="resetStage">Reiniciar</button>
+              </div>
+            </div>
+            <div class="cycle-panel">
+              <span class="cycle-panel-label">Etapa actual</span>
+              <h3 id="cycleTitle">FETCH</h3>
+              <p id="cycleDescription">
+                La instrucción se obtiene desde la memoria principal y queda preparada para su interpretación.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="memory-section">
+          <div class="section-heading sub-heading">
+            <span class="section-kicker">Jerarquía de Memoria</span>
+            <h2>Jerarquía de Memoria</h2>
+          </div>
+
+          <div class="memory-hierarchy">
+            <div class="memory-level" tabindex="0">
+              <span class="memory-level-label">Registros</span>
+              <span class="memory-detail">Máxima velocidad</span>
+            </div>
+            <div class="memory-arrow">↓</div>
+            <div class="memory-level" tabindex="0">
+              <span class="memory-level-label">Memoria Caché</span>
+              <span class="memory-detail">Velocidad alta</span>
+            </div>
+            <div class="memory-arrow">↓</div>
+            <div class="memory-level" tabindex="0">
+              <span class="memory-level-label">Memoria RAM</span>
+              <span class="memory-detail">Volátil y rápida</span>
+            </div>
+            <div class="memory-arrow">↓</div>
+            <div class="memory-level" tabindex="0">
+              <span class="memory-level-label">Almacenamiento Secundario</span>
+              <span class="memory-detail">Persistente</span>
+            </div>
+          </div>
+
+          <div class="memory-info-grid">
+            <article class="memory-info-card">
+              <span class="memory-info-title">Registros</span>
+              <span class="memory-info-data">Velocidad: máxima • Capacidad: limitada • Tipo: acceso directo</span>
+            </article>
+            <article class="memory-info-card">
+              <span class="memory-info-title">Memoria Caché</span>
+              <span class="memory-info-data">Velocidad: alta • Capacidad: pequeña • Función: datos frecuentes</span>
+            </article>
+            <article class="memory-info-card">
+              <span class="memory-info-title">Memoria RAM</span>
+              <span class="memory-info-data">Velocidad: media • Capacidad: variable • Persistencia: volátil</span>
+            </article>
+            <article class="memory-info-card">
+              <span class="memory-info-title">Almacenamiento Secundario</span>
+              <span class="memory-info-data">Velocidad: baja • Capacidad: alta • Persistencia: permanente</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section module-section" id="module-2">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Módulo 2</span>
+          <h2>Módulo 2: Fundamentos de Redes de Comunicaciones</h2>
+          <p class="section-intro">
+            Una red de comunicaciones permite la conexión entre dispositivos para compartir recursos,
+            transportar datos y sostener servicios digitales.
+          </p>
+        </div>
+
+        <div class="network-basics-grid">
+          <article class="network-card">
+            <span class="network-icon">◇</span>
+            <h3>Concepto</h3>
+            <p>Una red es un conjunto de dispositivos interconectados que intercambian información mediante reglas y medios de transmisión.</p>
+          </article>
+          <article class="network-card">
+            <span class="network-icon">↔</span>
+            <h3>Comunicación</h3>
+            <p>Las redes permiten que ordenadores, servidores, accesos inalámbricos y servicios compartan datos de forma organizada.</p>
+          </article>
+          <article class="network-card">
+            <span class="network-icon">✓</span>
+            <h3>Importancia</h3>
+            <p>La conectividad estructura infraestructuras modernas, validaciones, acceso remoto y sistemas de información.</p>
+          </article>
+        </div>
+
+        <div class="section-heading sub-heading">
+          <span class="section-kicker">Componentes de una red</span>
+          <h2>Componentes de una red</h2>
+        </div>
+
+        <div class="network-components-grid">
+          <article class="network-component-card" data-network-card="Computadores">
+            <span class="component-icon">▦</span>
+            <h3>Computadores</h3>
+            <p>Equipos finales que generan, procesan y consumen información.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Servidores">
+            <span class="component-icon">▩</span>
+            <h3>Servidores</h3>
+            <p>Dispositivos que ofrecen servicios, datos y recursos a la red.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Switches">
+            <span class="component-icon">✧</span>
+            <h3>Switches</h3>
+            <p>Conectan equipos locales y gestionan tráfico dentro de la LAN.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Routers">
+            <span class="component-icon">✤</span>
+            <h3>Routers</h3>
+            <p>Dirigen paquetes entre redes y permiten el acceso entre dominios.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Medios">
+            <span class="component-icon">⎯</span>
+            <h3>Medios de transmisión</h3>
+            <p>Cablas, radio y fibra transportan señales electromagnéticas.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Puntos de acceso">
+            <span class="component-icon">✺</span>
+            <h3>Puntos de acceso</h3>
+            <p>Extienden conectividad inalámbrica en una infraestructura.</p>
+          </article>
+          <article class="network-component-card" data-network-card="Dispositivos finales">
+            <span class="component-icon">●</span>
+            <h3>Dispositivos finales</h3>
+            <p>Teléfonos, impresoras, sensores y equipos de usuario.</p>
+          </article>
+        </div>
+
+        <div class="ip-mac-section">
+          <div class="section-heading sub-heading">
+            <span class="section-kicker">Direcciones</span>
+            <h2>Dirección IP vs Dirección MAC</h2>
+          </div>
+
+          <div class="ip-mac-layout">
+            <div class="ip-card">
+              <span class="ip-card-label">Dirección IP</span>
+              <div class="ip-card-content">
+                <p>La IP identifica un nodo dentro de una red lógica y se usa para conducir paquetes entre redes.</p>
+                <span class="example">Ejemplo: 192.168.1.10</span>
+              </div>
+            </div>
+            <div class="ip-card">
+              <span class="ip-card-label">Dirección MAC</span>
+              <div class="ip-card-content">
+                <p>La MAC identifica la interfaz física de un equipo dentro de una red local.</p>
+                <span class="example">Ejemplo: AA:BB:CC:DD:EE:FF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="comparison-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Característica</th>
+                  <th>IP</th>
+                  <th>MAC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Tipo</th>
+                  <td>Lógica</td>
+                  <td>Física</td>
+                </tr>
+                <tr>
+                  <th>Función</th>
+                  <td>Identificación y comunicación en red</td>
+                  <td>Identificación de interfaz</td>
+                </tr>
+                <tr>
+                  <th>Uso</th>
+                  <td>Comunicación y direccionamiento</td>
+                  <td>Comunicación dentro de la red local</td>
+                </tr>
+                <tr>
+                  <th>Ejemplo</th>
+                  <td>192.168.1.10</td>
+                  <td>AA:BB:CC:DD:EE:FF</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="network-traffic-demo">
+            <div class="traffic-node">
+              <span class="traffic-label">Dispositivo</span>
+              <span class="traffic-address">192.168.1.10</span>
+              <span class="traffic-address">AA:BB:CC:DD:EE:FF</span>
+            </div>
+            <div class="traffic-flow">
+              <span class="traffic-arrow">→</span>
+              <span class="traffic-packet">IP + MAC</span>
+              <span class="traffic-arrow">→</span>
+              <span class="traffic-node small">Router / Switch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="topology-section">
+          <div class="section-heading sub-heading">
+            <span class="section-kicker">Topologías físicas</span>
+            <h2>Topologías físicas de red</h2>
+          </div>
+
+          <div class="topology-nav">
+            <button class="topology-button active" data-topology="estrella">Estrella</button>
+            <button class="topology-button" data-topology="anillo">Anillo</button>
+            <button class="topology-button" data-topology="bus">Bus</button>
+          </div>
+
+          <div class="topology-content">
+            <div class="topology-diagram">
+              <div class="topology-estrella topology-view active">
+                <span class="center-node">Switch</span>
+                <span class="device-node d1">A</span>
+                <span class="device-node d2">B</span>
+                <span class="device-node d3">C</span>
+                <span class="device-node d4">D</span>
+              </div>
+              <div class="topology-anillo topology-view">
+                <span class="device-node ring-a">A</span>
+                <span class="device-node ring-b">B</span>
+                <span class="device-node ring-c">C</span>
+                <span class="device-node ring-d">D</span>
+                <span class="ring-line line1"></span>
+                <span class="ring-line line2"></span>
+                <span class="ring-line line3"></span>
+                <span class="ring-line line4"></span>
+              </div>
+              <div class="topology-bus topology-view">
+                <span class="bus-line"></span>
+                <span class="device-node bus-a">A</span>
+                <span class="device-node bus-b">B</span>
+                <span class="device-node bus-c">C</span>
+                <span class="device-node bus-d">D</span>
+              </div>
+            </div>
+
+            <div class="topology-details">
+              <h3 id="topologyTitle">Topología en estrella</h3>
+              <p id="topologyText">
+                Todos los dispositivos se conectan a un concentrador o switch central, simplificando gestión y solución de fallos.
+              </p>
+              <ul class="topology-list" id="topologyList">
+                <li>Funcionamiento: dispositivos enlazados a un nodo central.</li>
+                <li>Ventajas: fácil administración y aislamiento de fallos.</li>
+                <li>Desventajas: dependencia del nodo central.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section module-section forensic-module" id="module-3">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker">Módulo 3</span>
+          <h2>Módulo 3: Aplicación en la Investigación de Ciberdelitos</h2>
+          <p class="section-intro">
+            El conocimiento técnico de computadores y redes es esencial para estructurar un análisis de evidencia digital responsable.
+          </p>
+        </div>
+
+        <div class="forensics-argument">
+          <h3>¿Por qué es fundamental el conocimiento de RAM, registros y tráfico de red?</h3>
+          <p>
+            Durante una investigación, la memoria RAM puede contener procesos activos, conexiones,
+            credenciales temporales, datos de memoria y artefactos volátiles. Los registros y eventos
+            del sistema ayudan a reconstruir secuencias temporales de actividad. El tráfico de red
+            revela comunicaciones y patrones de comportamiento que pueden asociarse con acciones sospechosas.
+          </p>
+        </div>
+
+        <div class="forensic-card-grid">
+          <article class="forensic-card">
+            <span class="forensic-icon">RAM</span>
+            <h3>RAM</h3>
+            <p>La memoria volátil conserva procesos activos, datos temporales y conexiones que pueden desaparecer al apagar el equipo.</p>
+            <button class="btn-card light" data-open-forensic="RAM">Ver más</button>
+          </article>
+          <article class="forensic-card">
+            <span class="forensic-icon">REGISTROS</span>
+            <h3>Registros</h3>
+            <p>Los registros del sistema y aplicaciones permiten reconstruir eventos, intención, actividad y secuencia de operaciones.</p>
+            <button class="btn-card light" data-open-forensic="REGISTROS">Ver más</button>
+          </article>
+          <article class="forensic-card">
+            <span class="forensic-icon">TRÁFICO</span>
+            <h3>Tráfico de red</h3>
+            <p>El análisis del tráfico identifica conectividad, patrones, comunicaciones y datos que apoyan una investigación.</p>
+            <button class="btn-card light" data-open-forensic="TRAFICO">Ver más</button>
+          </article>
+        </div>
+
+        <div class="forensic-flow-section">
+          <div class="section-heading sub-heading">
+            <span class="section-kicker">Análisis forense digital</span>
+            <h2>Importancia del análisis forense digital</h2>
+          </div>
+          <div class="forensic-flow">
+            <span class="forensic-flow-step">Dispositivo</span>
+            <span class="flow-arrow">→</span>
+            <span class="forensic-flow-step">Adquisición de información</span>
+            <span class="flow-arrow">→</span>
+            <span class="forensic-flow-step">Análisis</span>
+            <span class="flow-arrow">→</span>
+            <span class="forensic-flow-step">Interpretación</span>
+            <span class="flow-arrow">→</span>
+            <span class="forensic-flow-step">Obtención de evidencia</span>
+            <span class="flow-arrow">→</span>
+            <span class="forensic-flow-step">Informe</span>
+          </div>
+          <p class="integrity-note">
+            El análisis debe respetar procedimientos técnicos, garantizar la integridad de la evidencia y evitar alteraciones indebidas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section conclusion-section" id="conclusions">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Conclusiones</span>
+          <h2>Conclusiones</h2>
+          <p class="section-intro">
+            Comprender la arquitectura de computadores, la CPU, la jerarquía de memoria,
+            las redes, IP y MAC, la topología, la RAM, los registros y el tráfico de red permite
+            explicar el funcionamiento de los sistemas tecnológicos y fundamentar investigaciones
+            de ciberdelitos con rigor técnico.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark small"><span></span></span>
+        <span class="brand-text">ForenseTech</span>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Inicio</a>
+        <a href="#module-1">Módulo 1</a>
+        <a href="#module-2">Módulo 2</a>
+        <a href="#module-3">Módulo 3</a>
+      </div>
+      <div class="footer-copy">
+        <span>© 2026 • Investigación Digital</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="infoModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-content">
+        <span class="modal-kicker" id="modalKicker">Componente</span>
+        <h3 id="modalTitle">Título</h3>
+        <p id="modalText">Descripción</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
