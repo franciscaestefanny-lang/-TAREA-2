@@ -738,6 +738,30 @@ button {
   font-size: 1.2rem;
 }
 
+.concept-list {
+  margin: 12px 0 16px;
+  padding-left: 20px;
+  color: var(--text-soft);
+  font-size: var(--font-size-sm);
+}
+
+.concept-list li {
+  margin-bottom: 8px;
+}
+
+.concept-label {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.mini-concept {
+  display: block;
+  margin-top: 12px;
+  color: var(--primary);
+  font-weight: 800;
+  font-size: var(--font-size-sm);
+}
+
 .cpu-card p,
 .network-card p,
 .network-component-card p,

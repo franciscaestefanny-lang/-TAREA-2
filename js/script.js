@@ -92,17 +92,17 @@ const cpuData = {
   ALU: {
     kicker: 'Unidad Aritmético-Lógica',
     title: 'ALU – Unidad Aritmético-Lógica',
-    text: 'La ALU ejecuta operaciones aritméticas y lógicas sobre datos, como suma, resta, comparación y decisiones binarias. Su trabajo permite transformar la información y generar resultados que la unidad de control organiza en el ciclo de instrucción.'
+    text: 'La ALU es la unidad encargada de ejecutar operaciones aritméticas y lógicas sobre los datos, como suma, resta, comparación, desplazamiento y decisiones binarias. Su función es transformar operandos en resultados para que la Unidad de Control ordene el posterior flujo de instrucciones y la memoria conserve el valor requerido.'
   },
   UC: {
     kicker: 'Unidad de Control',
     title: 'UC – Unidad de Control',
-    text: 'La Unidad de Control interpreta cada instrucción, coordina la secuencia de eventos y genera señales de control hacia la memoria, la ALU y los registros. Su relación con el ciclo Fetch-Decode-Execute permite controlar el flujo de ejecución.'
+    text: 'La Unidad de Control es el centro de coordinación del computador. Interpreta la instrucción, selecciona la operación y genera señales de control para activar la ALU, la memoria, los registros y los buses. Esta relación mantiene el ciclo de instrucción: Fetch, Decode y Execute en una secuencia ordenada.'
   },
   REG: {
     kicker: 'Registros',
     title: 'Registros',
-    text: 'Los registros son elementos pequeños y rápidos de almacenamiento dentro del procesador. Sirven para mantener datos, resultados temporales y direcciones durante el procesamiento, ofreciendo acceso extremadamente veloz al sistema.'
+    text: 'Los registros son pequeños espacios de almacenamiento interno del procesador. Contienen datos temporales, direcciones de memoria y resultados intermedios con acceso extremadamente rápido. Su papel es esencial porque permiten que la CPU procese instrucciones sin depender de una memoria más lenta.'
   }
 };
 
@@ -110,37 +110,37 @@ const networkData = {
   'Computadores': {
     kicker: 'Red de comunicaciones',
     title: 'Computadores',
-    text: 'Los computadores son equipos finales que generan, reciben y procesan datos dentro de una infraestructura de red.'
+    text: 'Los computadores son equipos finales que originan, procesan, almacenan y consumen información dentro de la red. Su función es participar como nodo de origen, destino o intermediario del flujo de datos.'
   },
   'Servidores': {
     kicker: 'Red de comunicaciones',
     title: 'Servidores',
-    text: 'Los servidores ofrecen recursos, aplicaciones, archivos y servicios a otros equipos bajo políticas de acceso y seguridad.'
+    text: 'Los servidores son sistemas dedicados a ofrecer recursos, servicios, datos o procesos a otros equipos. Su utilidad es centralizar capacidades de almacenamiento, autenticación, aplicaciones y distribución de información.'
   },
   'Switches': {
     kicker: 'Red de comunicaciones',
     title: 'Switches',
-    text: 'Los switches conectan dispositivos en una red local y gestionan el tráfico mediante direcciones de nivel de enlace.'
+    text: 'Los switches conectan equipos dentro de una red local y gestionan el tráfico entre ellos usando direcciones de nivel de enlace, reduciendo colisiones y favoreciendo el intercambio estructurado de paquetes.'
   },
   'Routers': {
     kicker: 'Red de comunicaciones',
     title: 'Routers',
-    text: 'Los routers encaminan paquetes entre redes distintas usando información de direcciones IP y políticas de encaminamiento.'
+    text: 'Los routers conectan diferentes redes y determinan la ruta de los paquetes según la dirección IP de origen y destino. Su función esencial es permitir el tránsito entre dominios de red y administrar los segmentos de comunicación.'
   },
   'Medios': {
     kicker: 'Red de comunicaciones',
     title: 'Medios de transmisión',
-    text: 'Los medios de transmisión incluyen cableado, fibra y radio, y transportan señales de comunicación entre dispositivos.'
+    text: 'Los medios de transmisión son los canales físicos o inalámbricos que transportan la señal entre dispositivos: cable coaxial, fibra óptica, cables ethernet, radio y ondas electromagnéticas.'
   },
   'Puntos de acceso': {
     kicker: 'Red de comunicaciones',
     title: 'Puntos de acceso',
-    text: 'Los puntos de acceso permiten conectar dispositivos inalámbricos a la infraestructura de red local y extender cobertura.'
+    text: 'Los puntos de acceso permiten a los dispositivos inalámbricos conectarse a la infraestructura de red local mediante radiofrecuencia. Actúan como puerta de enlace entre estaciones móviles y el entorno de comunicaciones.'
   },
   'Dispositivos finales': {
     kicker: 'Red de comunicaciones',
     title: 'Dispositivos finales',
-    text: 'Los dispositivos finales, como estaciones, móviles o sensores, originan o consumen información dentro de la red.'
+    text: 'Los dispositivos finales son los equipos que interactúan con la red de manera directa, como computadores, terminales, impresoras, sensores y teléfonos. Son actores de origen o consumo de la comunicación.'
   }
 };
 
